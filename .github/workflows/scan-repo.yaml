@@ -29,6 +29,8 @@ jobs:
           # JFrog access token with 'read' permissions on Xray service
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
 
+          JF_REQUIREMENTS_FILE: "requirements.txt"
+
           # [Mandatory if JF_ACCESS_TOKEN is not provided]
           # JFrog username with 'read' permissions for Xray. Must be provided with JF_PASSWORD
           # JF_USER: ${{ secrets.JF_USER }}
